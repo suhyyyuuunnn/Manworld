@@ -1,0 +1,58 @@
+a{
+    color: #000;
+    text-decoration: none;
+}
+h1{
+    font-size: 30px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 800;
+    padding: 10px 10px 10px 0px;
+    /* margin: 100px auto 10px auto; */
+    margin-bottom: 30px;
+    text-align: center;
+}
+table{
+    margin: auto auto 30px auto;
+    width: 1450px;
+    height: auto;
+    border: 1px solid #000;
+}
+/* 반응형 */
+@media (max-width: 1024px){
+    table{
+        width: 820px;
+        height: auto;
+    }
+}
+table th{
+    height: 20px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+table td{
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+option{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.search{
+    text-align: center;
+}
+select{
+    border: 1px solid #000;
+}
+legend{
+    visibility: hidden;
+}
+.footer{
+    border: 1px solid #000;
+    width: 100%;
+    height: 200px;
+    z-index: 1;
+}
+

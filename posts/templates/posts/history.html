@@ -1,0 +1,122 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>history</title>
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style_detail.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style type="text/css">
+        .main_img{
+            background: url("{% static '/img/8.jpg' %}") no-repeat center center;
+        }
+        .page p{
+            font-size: 17px;
+            line-height: 42px;
+        }
+        .information{
+            display: flex;
+            flex-direction: row;
+        }
+        .left{
+            font-weight: 700;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <a href="#" class="openmenu" onclick='openNav()'><img src="{% static 'img/square_24.png' %}" alt=""></a>
+
+        <div id="mysidenav" class="nav">
+            <a href="#" class="closebtn" onclick='closeNav()'>x</a>
+            <div class="menu">
+              <ul>
+                <h1>회사 소개</h1>
+                <li><a href="#">About Us</a></li>
+                <li><a href="{% url 'posts:index' %}">회사 연혁</a></li>
+                <li><a href="#">조직도</a></li>
+                <li><a href="#">오시는 길</a></li>
+              </ul>
+              <ul>
+                <h1>서비스</h1>
+                <li><a href="#">법인/지사 설립 컨설팅</a></li>
+                <li><a href="#">시장 진출 전략 수립</a></li>
+                <li><a href="#">밴더 등록 컨설팅</a></li>
+                <li><a href="#">투자환경 조사 대행(법률, 회계, 노무)</a></li>
+              </ul>
+              <ul>
+                <h1>비즈니스 제휴</h1>
+                <li><a href="#">관급 입찰 정보 제공</a></li>
+                <li><a href="#">관급 입찰 JV 컨설팅</a></li>
+              </ul>
+              <ul>
+                <h1>공지 및 정보</h1>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">UAE 뉴스</a></li>
+              </ul>
+              <ul>
+                <h1>전문 상담 예약</h1>
+                <li><a href="#">일정표 상 예약 가능 여부 확인</a></li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="main_img" >
+            <div class="logo">
+                <a href="#"><img id="logo" src="{% static 'img/logo_150.png' %}" alt=""></a>
+                <p>White and Blue Brokerage Company L.L.C</p>
+            </div>
+        </div>
+
+        <div class="page">
+            <h1>White and Blue Brokerage Company L.L.C</h1>
+            <div class="information">
+                <div class="left">
+                    <p>2017. 3. 14<br>
+                        2017. 8. 16<br>
+                        2019. 1. 14<br>
+                        2019. 4. 26<br>
+                        2019. 7. 5<br>
+                        2019. 7. 17<br>
+                        2020. 4. 15<br>
+                        2020. 9. 5<br>
+                        2019. 7. 17<br>
+                        2020. 4. 15<br>
+                    </p>
+                </div>
+                <div class="right">
+                    <p>(주)더존피그앤 회사 설립<br>
+                        가평군 공장설립승인 신청<br>
+                        (주)비에스바이오테크로 사명 변경 및 대표자 변경<br>
+                        (주)비에스푸드코리아, OK플럼 등 매실사업 포괄 인수<br>
+                        대만 광원바이오테크와 플럼 독점 재계약<br>
+                        서울 용산 1호점 매장 개장<br>
+                        용산 드래곤힐스파 리조트 내 1층 샵인샵매장<br>
+                        프롬안스플럼 브랜드 런칭 및 온라인계약<br>
+                	    서울 강남 사무실 오픈<br>
+                	    프리미엄 브랜드 효소매단 런칭 예정<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+                document.getElementById('mysidenav').style.width = '100%';
+            }
+            function closeNav() {
+                document.getElementById('mysidenav').style.width = '0';
+            }
+    </script>
+    </body>
+</html>
