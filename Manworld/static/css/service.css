@@ -1,0 +1,160 @@
+html, body{
+    height: 100%;
+}
+body{
+    margin: 0;
+}
+#body{
+    min-height: 100%;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 9.875rem;
+}
+.footer{
+    box-sizing: border-box;
+    margin-top: -9.875rem;
+    height: 9.875rem;
+    padding: 20px 0 10px 0;
+}
+
+.image{
+    background: url("../../../../외주 3/img/header/architecture-4179270_1920.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    width: 100vw; 
+    height: 300px;
+}
+.cover{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%; 
+    height: 300px;
+}
+.image h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* font-family: 'Nanum Gothic', sans-serif; */
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #fff;
+}
+
+button{
+    font-family: 'Noto Sans KR', sans-serif;    
+    font-weight: 700;
+    margin: 20px auto;
+    font-size: large;
+    border: none;
+}
+.btn-group{
+    margin: auto;
+    width: 1400px;
+}
+.btn-group button{
+    border: 1px solid #000;
+    width: 350px;
+    height: 50px;
+    color: #000;
+    cursor: pointer;
+    float: left;
+    background-color: #fff;
+}
+.btn-group button:hover{
+    background-color: rgba(24, 168, 241, 0.7);
+}
+.page h1{
+    font-size: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 800;
+    padding: 10px 10px 10px 0px;
+    margin-bottom: 10px;
+}
+#highlight{
+    background: linear-gradient(to top, rgba(24,168,241, 0.3) 50%, transparent 50%);
+}
+.page{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    flex-direction: column;
+    margin: 20px auto;
+    text-align: center;
+    align-items: center;
+}
+.page p{
+    font-size: 17px;
+    line-height: 25px;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 10px 0px 10px 0px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.btn-group button:not(:last-child) {
+    border-right: none;
+}
+.btn{
+    display: none;
+}
+.btn p{
+    margin : 10px auto;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+}
+.btn_content{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.btn_content p{
+    font-size: 16px !important;
+}
+.btn_service{
+    margin: 20px auto;
+    font-size: large;
+    width: 200px;
+    height: 50px;
+    border: none;
+}
+#b, #c, #d{
+    display: none;
+}
+@media (max-width: 1024px){
+    .btn-group{
+        width: 800px;
+    }
+    .btn-group button{
+        width: 200px;
+        height: 50px;
+        float: left;
+    }
+}
+@media (max-width: 800px){
+    .btn-group{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .btn-group button:not(:last-child) {
+        border-right: 1px solid #000;;
+    }
+    .btn-group button{
+        width: 200px;
+        height: 50px;
+        float: left;
+    }
+    .btn_content{
+            flex-wrap: wrap;
+    }
+}

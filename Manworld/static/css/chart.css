@@ -1,9 +1,17 @@
+.wrapper{
+    width: 100%;
+}
 .image{
     position: relative;
     width: 100%;
     height: 350px;
-    background: url("../img/2.jpg") no-repeat center center;
+    background: url("../../../../외주 3/img/header/scott-webb--udZnjsCzsE-unsplash.jpg") no-repeat center center;
     color: #fff;
+}
+.cover{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%; 
+    height: 350px;
 }
 .image h1{
     position: absolute;
@@ -14,13 +22,17 @@
     font-size: 50px;
 }
 
-
 .member{
     border: 2px solid #18A8F1;
-    display: flex;
     margin: 50px auto;
+    text-align: center;
     width: 900px;
     height: 350px;
+}
+.member_wrapper{
+    width: 500px;
+    margin: 40px  auto auto 130px;
+    display: flex;
 }
 .member_photo{
     margin: 25px;
@@ -28,13 +40,13 @@
     height: 200px;
 }
 .info_text h1{
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     font-weight: 700;
     margin: 30px 20px 20px 20px;
     font-size: 30px;
 }
 .info_text span{
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     font-weight: 600;
     font-size: 24px;
 }
@@ -51,7 +63,7 @@
     flex-direction: row;
 }
 .left{
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     font-weight: 600;
     margin-left: 20px;
     margin-right: 20px;
@@ -62,3 +74,4 @@
     font-size: 15px;
     line-height: 42px;
 }
+

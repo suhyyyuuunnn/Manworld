@@ -35,39 +35,41 @@
     <div class="wrapper">
         <a href="#" class="openmenu" onclick='openNav()'><img src="{% static 'img/square_24.png' %}" alt=""></a>
 
-        <div id="mysidenav" class="nav">
-            <a href="#" class="closebtn" onclick='closeNav()'>x</a>
-            <div class="menu">
-              <ul>
-                <h1>회사 소개</h1>
-                <li><a href="#">About Us</a></li>
-                <li><a href="{% url 'posts:index' %}">회사 연혁</a></li>
-                <li><a href="#">조직도</a></li>
-                <li><a href="#">오시는 길</a></li>
-              </ul>
-              <ul>
-                <h1>서비스</h1>
-                <li><a href="#">법인/지사 설립 컨설팅</a></li>
-                <li><a href="#">시장 진출 전략 수립</a></li>
-                <li><a href="#">밴더 등록 컨설팅</a></li>
-                <li><a href="#">투자환경 조사 대행(법률, 회계, 노무)</a></li>
-              </ul>
-              <ul>
-                <h1>비즈니스 제휴</h1>
-                <li><a href="#">관급 입찰 정보 제공</a></li>
-                <li><a href="#">관급 입찰 JV 컨설팅</a></li>
-              </ul>
-              <ul>
-                <h1>공지 및 정보</h1>
-                <li><a href="#">공지사항</a></li>
-                <li><a href="#">UAE 뉴스</a></li>
-              </ul>
-              <ul>
-                <h1>전문 상담 예약</h1>
-                <li><a href="#">일정표 상 예약 가능 여부 확인</a></li>
-              </ul>
-            </div>
+        <!-- navbar -->
+    <div id="mysidenav" class="nav">
+        <a href="#" class="closebtn" onclick='closeNav()'>x</a>
+        <div class="menu">
+          <ul>
+            <h1>회사 소개</h1>
+            <li><a href="{% url 'posts:about' %}">About Us</a></li>
+            <li><a href="{% url 'posts:history' %}">회사 연혁</a></li>
+            <li><a href="{% url 'posts:chart' %}">조직도</a></li>
+            <li><a href="{% url 'posts:location' %}">오시는 길</a></li>
+          </ul>
+          <ul>
+            <h1>서비스</h1>
+            <li><a href="{% url 'posts:establish' %}">법인/지사 설립 컨설팅</a></li>
+            <li><a href="{% url 'posts:market' %}">시장 진출 전략 수립</a></li>
+            <li><a href="{% url 'posts:register' %}">밴더 등록 컨설팅</a></li>
+            <li><a href="{% url 'posts:find' %}">투자환경 조사 대행(법률, 회계, 노무)</a></li>
+          </ul>
+          <ul>
+            <h1>비즈니스 제휴</h1>
+            <li><a href="{% url 'posts:information' %}">관급 입찰 정보 제공</a></li>
+            <li><a href="{% url 'posts:jv' %}">관급 입찰 JV 컨설팅</a></li>
+          </ul>
+          <ul>
+            <h1>공지 및 정보</h1>
+            <li><a href="{% url 'posts:notice' %}">공지사항</a></li>
+            <li><a href="{% url 'posts:news' %}">UAE 뉴스</a></li>
+          </ul>
+          <ul>
+            <h1>전문 상담 예약</h1>
+            <li><a href="{% url 'posts:reservation' %}">일정표 상 예약 가능 여부 확인</a></li>
+          </ul>
         </div>
+      </div>
+<!-- navbar -->
 
         <div class="main_img" >
             <div class="logo">

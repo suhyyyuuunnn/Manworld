@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/notice.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+  <a href="#" class="openmenu" onclick='openNav()'><img src="img/square_24.png" alt=""></a>
+  <div class="logo">
+    <a href="#"><img id="logo" src="img/logo_150.png" alt=""></a>
+    <p>White and Blue Brokerage Company L.L.C</p>
+  </div>
+
+  <div id="mysidenav" class="nav">
+        <a href="#" class="closebtn" onclick='closeNav()'>x</a>
+        <div class="menu">
+          <ul>
+            <h1>회사 소개</h1>
+            <li><a href="{% url 'posts:about' %}">About Us</a></li>
+            <li><a href="{% url 'posts:history' %}">회사 연혁</a></li>
+            <li><a href="{% url 'posts:chart' %}">조직도</a></li>
+            <li><a href="{% url 'posts:location' %}">오시는 길</a></li>
+          </ul>
+          <ul>
+            <h1>서비스</h1>
+            <li><a href="{% url 'posts:establish' %}">법인/지사 설립 컨설팅</a></li>
+            <li><a href="{% url 'posts:market' %}">시장 진출 전략 수립</a></li>
+            <li><a href="{% url 'posts:register' %}">밴더 등록 컨설팅</a></li>
+            <li><a href="{% url 'posts:find' %}">투자환경 조사 대행(법률, 회계, 노무)</a></li>
+          </ul>
+          <ul>
+            <h1>비즈니스 제휴</h1>
+            <li><a href="{% url 'posts:information' %}">관급 입찰 정보 제공</a></li>
+            <li><a href="{% url 'posts:jv' %}">관급 입찰 JV 컨설팅</a></li>
+          </ul>
+          <ul>
+            <h1>공지 및 정보</h1>
+            <li><a href="{% url 'posts:notice' %}">공지사항</a></li>
+            <li><a href="{% url 'posts:news' %}">UAE 뉴스</a></li>
+          </ul>
+          <ul>
+            <h1>전문 상담 예약</h1>
+            <li><a href="{% url 'posts:reservation' %}">일정표 상 예약 가능 여부 확인</a></li>
+          </ul>
+        </div>
+      </div>
+  <div style="width: 100%; height: 100px;"></div>
+  <div class="notice">
+      <h1>UAE NEWS</h1>
+      <table>
+          <th>번호</th>
+          <th>제목</th>
+          <th>작성자</th>
+          <th>작성일</th>
+          <th>조회</th>
+          <tr>
+            <td>1</td>
+            <td>배고프다</td>
+            <td>박수연</td>
+            <td>2021.02.20</td>
+            <td>0</td>
+          </tr>
+      </table>
+  </div>
+
+  <fieldset class="search">
+    <legend>검색</legend>
+    <select name="date">
+        <option value="week">일주일</option>
+        <option value="month">한달</option>
+        <option value="3month">세달</option>
+        <option value="all">전체</option>
+    </select>
+    <select name="key">
+        <option value="title">제목</option>
+        <option value="content">내용</option>
+    </select>
+    <input type="text" id="search_field">
+    <label><a href="#">검색</a></label>
+  </fieldset>
+
+  <div class="footer"></div>
+
+  
+  <script>
+    function openNav() {
+      document.getElementById('mysidenav').style.width = '100%';
+    }
+    function closeNav() {
+      document.getElementById('mysidenav').style.width = '0';
+    }
+  </script>
+</body>
+</html>

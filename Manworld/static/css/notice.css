@@ -2,17 +2,30 @@ a{
     color: #000;
     text-decoration: none;
 }
-h1{
-    font-size: 30px;
-    font-family: 'Nanum Gothic', sans-serif;
-    font-weight: 800;
-    padding: 10px 10px 10px 0px;
-    /* margin: 100px auto 10px auto; */
-    margin-bottom: 30px;
-    text-align: center;
+.image{
+    position: relative;
+    width: 100vw; 
+    height: 300px;
 }
+.cover{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%; 
+    height: 300px;
+}
+.image h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #fff;
+}
+
+
 table{
-    margin: auto auto 30px auto;
+    margin: 50px auto 30px auto;
     width: 1450px;
     height: auto;
     border: 1px solid #000;
@@ -28,14 +41,16 @@ table th{
     height: 20px;
     padding: 10px;
     font-size: 16px;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     font-weight: 700;
     text-align: center;
     border-bottom: 1px solid #000;
 }
 table td{
     text-align: center;
-    font-family: 'Nanum Gothic', sans-serif;
+    padding: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
 }
 option{
     font-family: 'Nanum Gothic', sans-serif;
@@ -49,10 +64,3 @@ select{
 legend{
     visibility: hidden;
 }
-.footer{
-    border: 1px solid #000;
-    width: 100%;
-    height: 200px;
-    z-index: 1;
-}
-

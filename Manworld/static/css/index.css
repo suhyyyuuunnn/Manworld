@@ -1,0 +1,34 @@
+.main img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    object-fit: cover;
+}
+#one{
+    object-position: center;
+    object-fit: cover;
+}
+#two{
+    object-fit: cover;
+}
+#three{
+    background: url("../../../../외주 3/img/3.jpg") no-repeat center center;
+    background-size: cover;
+}
+#four{
+    background: url("../../../../외주 3/img/4.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.hidden{
+    opacity: 0;
+}
+.fade-in {
+    animation: fade-in 300ms;
+}
+@keyframes fade-in {
+    from {opacity: 0; transform: scale(.5,.5)}
+    to {opacity: 1;}
+}
