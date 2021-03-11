@@ -20,7 +20,7 @@ body{
 }
 @font-face{
   font-family: 'Sail-Regular';
-  src: url(../../../../외주 3/sail/Sail-Regular.ttf) format('truetype');
+  src: url(../sail/Sail-Regular.ttf) format('truetype');
 }
 .logo{
   position: absolute;

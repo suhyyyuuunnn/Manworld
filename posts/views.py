@@ -17,30 +17,6 @@ def location(request):
     return render(request, 'posts/location.html')
 
 
-def establish(request):
-    return render(request, 'posts/consulting_establish.html')
-
-
-def market(request):
-    return render(request, 'posts/market.html')
-
-
-def register(request):
-    return render(request, 'posts/consulting_register.html')
-
-
-def find(request):
-    return render(request, 'posts/find.html')
-
-
-def information(request):
-    return render(request, 'posts/information.html')
-
-
-def jv(request):
-    return render(request, 'posts/jv.html')
-
-
 def notice(request):
     return render(request, 'posts/notice.html')
 
@@ -55,3 +31,11 @@ def reservation(request):
 
 def about(request):
     return render(request, 'posts/about.html')
+
+
+def service(request):
+    return render(request, 'posts/service.html')
+
+
+def business(request):
+    return render(request, 'posts/business.html')

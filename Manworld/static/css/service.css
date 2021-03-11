@@ -20,7 +20,7 @@ body{
 }
 
 .image{
-    background: url("../../../../외주 3/img/header/architecture-4179270_1920.jpg") no-repeat center center;
+    background: url("../img/header/architecture-4179270_1920.jpg") no-repeat center center;
     background-size: cover;
     position: relative;
     width: 100vw; 

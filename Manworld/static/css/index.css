@@ -6,6 +6,32 @@
     display: block;
     object-fit: cover;
 }
+.cover{
+    position: absolute;
+    z-index: 10;
+    opacity: 0.1;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    object-fit: cover;
+}
+.image_wrapper{
+    position:relative;
+}
+.main_text{
+    z-index: 20;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Crimson Text', serif;
+    font-size: 65px;
+    color: #fff;
+    text-align: center;
+}
 #one{
     object-position: center;
     object-fit: cover;
@@ -14,11 +40,11 @@
     object-fit: cover;
 }
 #three{
-    background: url("../../../../외주 3/img/3.jpg") no-repeat center center;
+    background: url("../img/3.jpg") no-repeat center center;
     background-size: cover;
 }
 #four{
-    background: url("../../../../외주 3/img/4.jpg") no-repeat center center;
+    background: url("../img/4.jpg") no-repeat center center;
     background-size: cover;
 }
 
