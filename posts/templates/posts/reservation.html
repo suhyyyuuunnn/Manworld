@@ -24,47 +24,46 @@
     </style>
 </head>
 <body>
-        <div id="content">
-          <a href="#" class="openmenu" onclick='openNav()'><img src="{% static 'img/square_24.png' %}" alt=""></a>
-          <div class="logo">
-                <a href="{% url 'posts:index' %}"><img id="logo" src="{% static 'img/logo_150.png' %}" alt=""></a>
-                <p>White & Blue Brokerage Company L.L.C</p>
-            </div>
+<a href="#" class="openmenu" onclick='openNav()'><img src="{% static 'img/square_24.png' %}" alt=""></a>
+  <div class="logo">
+    <a href="{% url 'posts:index' %}"><img id="logo" src="{% static 'img/logo_150.png' %}" alt=""></a>
+    <p>White & Blue Brokerage Company L.L.C</p>
+  </div>
 
-            <!-- navbar -->
-            <div id="mysidenav" class="nav">
-                <a href="#" class="closebtn" onclick='closeNav()'>x</a>
-                <div class="menu">
-                <ul>
-                    <h1>회사 소개</h1>
-                    <li><a href="{% url 'posts:about' %}">About Us</a></li>
-                    <li><a href="{% url 'posts:history' %}">회사 연혁</a></li>
-                    <li><a href="{% url 'posts:chart' %}">조직도</a></li>
-                    <li><a href="{% url 'posts:location' %}">오시는 길</a></li>
-                </ul>
-                <ul>
-                    <h1>서비스</h1>
-                    <li><a href="{% url 'posts:service' %}">법인/지사 설립 컨설팅</a></li>
-                    <li><a href="{% url 'posts:service' %}">시장 진출 전략 수립</a></li>
-                    <li><a href="{% url 'posts:service' %}">밴더 등록 컨설팅</a></li>
-                    <li><a href="{% url 'posts:service' %}">투자환경 조사 대행(법률, 회계, 노무)</a></li>
-                </ul>
-                <ul>
-                    <h1>비즈니스 제휴</h1>
-                    <li><a href="{% url 'posts:business' %}">관급 입찰 정보 제공</a></li>
-                    <li><a href="{% url 'posts:business' %}">관급 입찰 JV 컨설팅</a></li>
-                </ul>
-                <ul>
-                    <h1>공지 및 정보</h1>
-                    <li><a href="{% url 'posts:notice' %}">공지사항</a></li>
-                    <li><a href="{% url 'posts:news' %}">UAE 뉴스</a></li>
-                </ul>
-                <ul>
-                    <h1>전문 상담 예약</h1>
-                    <li><a href="{% url 'posts:reservation' %}">일정표 상 예약 가능 여부 확인</a></li>
-                </ul>
-                </div>
-            </div>
+  <div>
+    <div id="mysidenav" class="nav">
+        <a href="#" class="closebtn" onclick='closeNav()'>x</a>
+        <div class="menu">
+          <ul>
+              <h1>회사 소개</h1>
+              <li><a href="{% url 'posts:about' %}">About Us</a></li>
+              <li><a href="{% url 'posts:history' %}">회사 연혁</a></li>
+              <li><a href="{% url 'posts:chart' %}">조직도</a></li>
+              <li><a href="{% url 'posts:location' %}">오시는 길</a></li>
+          </ul>
+          <ul>
+              <h1>서비스</h1>
+              <li><a href="{% url 'posts:service' %}">법인/지사 설립 컨설팅</a></li>
+              <li><a href="{% url 'posts:service' %}">시장 진출 전략 수립</a></li>
+              <li><a href="{% url 'posts:service' %}">밴더 등록 컨설팅</a></li>
+              <li><a href="{% url 'posts:service' %}">투자환경 조사 대행(법률, 회계, 노무)</a></li>
+          </ul>
+          <ul>
+              <h1>비즈니스 제휴</h1>
+              <li><a href="{% url 'posts:business' %}">관급 입찰 정보 제공</a></li>
+              <li><a href="{% url 'posts:business' %}">관급 입찰 JV 컨설팅</a></li>
+          </ul>
+          <ul>
+              <h1>공지 및 정보</h1>
+              <li><a href="{% url 'posts:notice' %}">공지사항</a></li>
+              <li><a href="{% url 'posts:news' %}">UAE 뉴스</a></li>
+          </ul>
+          <ul>
+              <h1>전문 상담 예약</h1>
+              <li><a href="{% url 'posts:reservation' %}">일정표 상 예약 가능 여부 확인</a></li>
+          </ul>
+        </div>
+      </div>
 
       <!-- 상단 이미지 -->
       <div class="image">
@@ -101,12 +100,11 @@
           </table>
         </div>
       </div>
-      
+
       <div class="btn">
         <button id="btn_finish">작성완료</button>
         <button id="btn_cancel">취소</button>
       </div>
-    </div>
   </div>
 
   <div class="footer2">
