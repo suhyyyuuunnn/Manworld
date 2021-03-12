@@ -1,4 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404, redirect
+from .models import Post
+from .forms import PostForm
+from django.views.decorators.http import require_POST
 
 
 def index(request):
@@ -22,7 +25,10 @@ def notice(request):
 
 
 def news(request):
-    return render(request, 'posts/news.html')
+    context = {
+        'posts': Post.objects.order_by('-created_at')
+    }
+    return render(request, 'posts/news.html', context)
 
 
 def reservation(request):
