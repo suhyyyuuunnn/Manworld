@@ -21,7 +21,22 @@
     font-family: 'Dancing Script', cursive;
     font-size: 50px;
 }
-
+h1{
+    margin: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.chart_img{
+    margin: auto;
+    height: 600px;
+    width: 1000px;
+    margin-bottom: 20px;
+}
+.chart_img img{
+    width: 100%;
+    object-fit: cover;
+}
 .member{
     border: 2px solid #18A8F1;
     margin: 50px auto;
@@ -74,4 +89,3 @@
     font-size: 15px;
     line-height: 42px;
 }
-

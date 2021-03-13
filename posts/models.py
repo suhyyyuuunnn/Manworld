@@ -12,6 +12,7 @@ class Post(models.Model):
     user = models.CharField(max_length=100, verbose_name="작성자")
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="등록시간")
     updated_at = models.DateTimeField(auto_now=True, verbose_name="업데이트시간")
+    image = models.ImageField(upload_to="posts/img", blank=True, default="posts/default/1.jpg", verbose_name="썸네일 이미지")
 
     def __unicode__(self):
         return self.title

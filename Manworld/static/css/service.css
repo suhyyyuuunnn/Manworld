@@ -46,17 +46,17 @@ body{
 button{
     font-family: 'Noto Sans KR', sans-serif;    
     font-weight: 700;
-    margin: 20px auto;
+    margin: 0 auto;
     font-size: large;
     border: none;
 }
 .btn-group{
-    margin: auto;
-    width: 1400px;
+    margin: 1px auto;
+    width: 1200px;
 }
 .btn-group button{
     border: 1px solid #000;
-    width: 350px;
+    width: 400px;
     height: 50px;
     color: #000;
     cursor: pointer;
@@ -127,15 +127,15 @@ button{
     height: 50px;
     border: none;
 }
-#b, #c, #d{
+#b, #c, #d, #e, #f{
     display: none;
 }
 @media (max-width: 1024px){
     .btn-group{
-        width: 800px;
+        width: 900px;
     }
     .btn-group button{
-        width: 200px;
+        width: 300px;
         height: 50px;
         float: left;
     }

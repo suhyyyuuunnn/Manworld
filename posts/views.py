@@ -45,3 +45,10 @@ def service(request):
 
 def business(request):
     return render(request, 'posts/business.html')
+
+
+def test(request):
+    context = {
+        'posts': Post.objects.order_by('-created_at')
+    }
+    return render(request, 'posts/test.html', context)

@@ -28,26 +28,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Crimson Text', serif;
-    font-size: 65px;
+    font-size: 100px;
     color: #fff;
     text-align: center;
 }
-#one{
-    object-position: center;
-    object-fit: cover;
-}
-#two{
-    object-fit: cover;
-}
-#three{
-    background: url("../img/3.jpg") no-repeat center center;
-    background-size: cover;
-}
-#four{
-    background: url("../img/4.jpg") no-repeat center center;
-    background-size: cover;
-}
-
 .hidden{
     opacity: 0;
 }
