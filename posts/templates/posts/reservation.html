@@ -74,38 +74,37 @@
       </div>
 
       <div class="counsel">
-        <div class="table-box">
-          <table>
-            <tr>
-              <th>이름</th>
-              <td><input type="text" id="name"></td>
-            </tr>
-            <tr>
-              <th>연락처</th>
-              <td><input type="text" id="num"></td>
-              <!-- <td><input type="text" id="first"><span>-</span></td>
-              <td><input type="text" id="second"><span>-</span></td>
-              <td><input type="text" id="third"></td> -->
-            </tr>
-            <tr>
-              <th>제목</th>
-              <td><input type="text" id="title"></td>
-            </tr>
-            <tr>
-              <th>내용</th>
-              <td><input type="text" id="content"></td>
-            </tr>
-            <tr>
-              <th>비밀번호</th>
-              <td><input type="password" id="password"></td>
-            </tr>
-          </table>
-        </div>
-      </div>
-
-      <div class="btn">
-        <button id="btn_finish">작성완료</button>
-        <button id="btn_cancel">취소</button>
+           <form action="{% url 'posts:reservation' %}" method="POST">
+               {% csrf_token %}
+                <div class="table-box">
+                  <table>
+                    <tr>
+                      <th>이름</th>
+                      <td><input type="text" name="name" id="name"></td>
+                    </tr>
+                    <tr>
+                      <th>연락처</th>
+                      <td><input type="text" name="phone" id="phone"></td>
+                    </tr>
+                    <tr>
+                      <th>제목</th>
+                      <td><input type="text" name="title" id="title"></td>
+                    </tr>
+                    <tr>
+                      <th>내용</th>
+                      <td><input type="text" name="content" id="content"></td>
+                    </tr>
+                    <tr>
+                      <th>비밀번호</th>
+                      <td><input type="password" name="password" id="password"></td>
+                    </tr>
+                  </table>
+                </div>
+                  <div class="btn">
+                    <button type="submit" id="btn_finish">작성완료</button>
+                    <button type="reset" id="btn_cancel">취소</button>
+                  </div>
+          </form>
       </div>
   </div>
 

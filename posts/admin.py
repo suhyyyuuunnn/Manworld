@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post
+from .models import Post, Counsel
 from django_summernote.admin import SummernoteModelAdmin
 
 
@@ -9,4 +9,12 @@ class PostAdmin(SummernoteModelAdmin):
     list_display = (
         'title',
         'user',
+    )
+
+
+@admin.register(Counsel)
+class CounselAdmin(SummernoteModelAdmin):
+    list_display = (
+        'title',
+        'name',
     )
