@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import index, history, chart, location, notice, news, reservation, about, business, service, test
+from .views import index, history, chart, location, notice, news, reservation, about, business, service
 
 
 app_name = "posts"
@@ -14,5 +14,4 @@ urlpatterns = [
     path('news/', news, name="news"),
     path('reservation/', reservation, name="reservation"),
     path('about/', about, name="about"),
-    path('test/', test, name="test"),
 ]

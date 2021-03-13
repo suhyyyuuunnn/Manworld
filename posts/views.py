@@ -24,13 +24,6 @@ def notice(request):
     return render(request, 'posts/notice.html')
 
 
-def news(request):
-    context = {
-        'posts': Post.objects.order_by('-created_at')
-    }
-    return render(request, 'posts/news.html', context)
-
-
 def reservation(request):
     return render(request, 'posts/reservation.html')
 
@@ -47,8 +40,8 @@ def business(request):
     return render(request, 'posts/business.html')
 
 
-def test(request):
+def news(request):
     context = {
         'posts': Post.objects.order_by('-created_at')
     }
-    return render(request, 'posts/test.html', context)
+    return render(request, 'posts/news.html', context)
