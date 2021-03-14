@@ -21,41 +21,27 @@
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 50px;
 }
+.footer{
+    height: 18rem;
+}
 
-table{
-    margin: 50px auto 30px auto;
-    width: 1450px;
-    height: auto;
-    border: 1px solid #000;
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 100px;
+    float: left;
 }
-/* 반응형 */
-@media (max-width: 1024px){
-    table{
-        width: 820px;
-        height: auto;
-    }
-}
-table th{
-    height: 20px;
-    padding: 10px;
-    font-size: 16px;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 700;
-    text-align: center;
-    border-bottom: 1px solid #000;
-}
-table td{
-    text-align: center;
-    padding: 10px;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 300;
-}
+
 option{
     font-family: 'Nanum Gothic', sans-serif;
 }
 .search{
     text-align: center;
-    margin-bottom: 50px;
 }
 select{
     border: 1px solid #000;

@@ -21,6 +21,7 @@
     font-family: 'Dancing Script', cursive;
     font-size: 50px;
 }
+
 h1{
     margin: 30px;
     text-align: center;
@@ -31,61 +32,16 @@ h1{
     margin: auto;
     height: 600px;
     width: 1000px;
-    margin-bottom: 20px;
 }
 .chart_img img{
     width: 100%;
     object-fit: cover;
 }
-.member{
-    border: 2px solid #18A8F1;
-    margin: 50px auto;
-    text-align: center;
-    width: 900px;
-    height: 350px;
-}
-.member_wrapper{
-    width: 500px;
-    margin: 40px  auto auto 130px;
-    display: flex;
-}
-.member_photo{
-    margin: 25px;
-    width: 200px;
-    height: 200px;
-}
-.info_text h1{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 700;
-    margin: 30px 20px 20px 20px;
-    font-size: 30px;
-}
-.info_text span{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-}
-#sub_info{
-    font-size: 20px;;
-    width: 300px;
-    height: auto;
-    margin: 0 20px 10px 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #18A8F1;
-}
-.information{
-    display: flex;
-    flex-direction: row;
-}
-.left{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 600;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 17px;
-    line-height: 42px;
-}
-.right{
-    font-size: 15px;
-    line-height: 42px;
+
+
+@media (max-width: 1000px){
+    .chart_img{
+        height: auto;
+        width: 90%;
+    }
 }

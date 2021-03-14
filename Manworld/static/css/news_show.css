@@ -1,0 +1,69 @@
+.wrapper{
+    width: 100%;
+}
+.image{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background: url("../img/header/skyline-5575251_1920.jpg") no-repeat center center;
+    color: #fff;
+}
+.cover{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 350px;
+}
+.image h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 50px;
+}
+
+.main{
+    width: 1000px;
+    margin: auto;
+}
+.title{
+    display: flex;
+    border-bottom: 1px solid gray;
+    border-top: 2px solid #000;
+}
+.main_content{
+    width: 1000px;
+    margin: auto;
+    min-height: 800px;
+}
+.main_title h2{
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 700px;
+    padding: 20px;
+}
+.sub_title{
+    width: 300px;
+    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    padding-left: 10px;
+}
+.sub_title span{
+    line-height: 70px;
+}
+.btn{
+    margin: auto;
+    width: 50%;
+}
+button{
+    width: 80px;
+    height: 45px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 17px;
+    border: none;
+    float: right;
+    margin: 20px auto 50px auto;
+}
+/* 반응형 */

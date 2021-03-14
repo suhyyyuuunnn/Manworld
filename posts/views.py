@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Post
-from .forms import PostForm
+from .forms import PostForm, CounselForm
 from django.views.decorators.http import require_POST
 
 
@@ -45,3 +45,13 @@ def news(request):
         'posts': Post.objects.order_by('-created_at')
     }
     return render(request, 'posts/news.html', context)
+
+
+@require_POST
+def create(request):
+    form = CounselForm(request.POST)
+    if form.is_valid():
+        form.save()
+    return render(request, 'posts/reservation.html')
+
+

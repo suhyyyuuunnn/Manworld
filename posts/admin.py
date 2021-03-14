@@ -17,4 +17,6 @@ class CounselAdmin(SummernoteModelAdmin):
     list_display = (
         'title',
         'name',
+        'phone',
+        'content',
     )

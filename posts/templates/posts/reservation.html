@@ -73,8 +73,8 @@
         <h1>상담 예약</h1>
       </div>
 
-      <div class="counsel">
-           <form action="{% url 'posts:reservation' %}" method="POST">
+       <div class="counsel">
+           <form action="{% url 'posts:create' %}" method="POST">
                {% csrf_token %}
                 <div class="table-box">
                   <table>

@@ -1,0 +1,37 @@
+.wrapper{
+    width: 100%;
+}
+.image{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background: url("../img/header/skyline-5575251_1920.jpg") no-repeat center center;
+    color: #fff;
+}
+.cover{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 350px;
+}
+.image h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 50px;
+}
+
+
+.main_content{
+    border: 1px solid #000;
+    margin: auto;
+    width: 1000px;
+    min-height: 600px;
+}
+.main_title h2{
+    text-align: center;
+}
+.sub_title span{
+    text-align: center;
+}
